@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gargroh/semantic-release-test/issues"
   },
-  "homepage": "https://github.com/gargroh/semantic-release-test#readme"
+  "homepage": "https://github.com/gargroh/semantic-release-test#readme",
+  "devDependencies": {
+    "semantic-release": "17.0.6"
+  }
 }
