@@ -6,3 +6,5 @@ console.log("minor feature");
 console.log("fix");
 
 console.log("BREAKING CHANGE");
+
+console.log("fix");
