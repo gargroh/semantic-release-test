@@ -8,3 +8,5 @@ console.log("fix");
 console.log("BREAKING CHANGE");
 
 console.log("fix");
+
+console.log("trying with extension");
