@@ -15,7 +15,8 @@
         "test",
         "code",
         "doc",
-        "ideas"
+        "ideas",
+        "bug"
       ]
     }
   ],
