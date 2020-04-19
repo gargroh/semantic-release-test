@@ -35,6 +35,8 @@ Break: Trying with breaking
 
 Breaking: XYZ
 
+BREAKING CHANGE: `extends` key in config file is now used for extending other config files
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
