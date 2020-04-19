@@ -14,6 +14,17 @@ trigger again 1
 
 trigger again 2
 
+The `Tag` is one of the following:
+
+- `Fix` — for a bug fix.
+- `Update` — for a backwards-compatible enhancement.
+- `New` — implemented a new feature.
+- `Breaking` — for a backwards—incompatible enhancement or feature.
+- `Docs` — changes to documentation only.
+- `Build` — changes to build process only.
+- `Upgrade` — for a dependency upgrade.
+- `Chore` — for refactoring, adding tests and so on (anything that isn’t user-facing).
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
