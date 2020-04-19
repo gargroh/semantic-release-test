@@ -31,6 +31,8 @@ The `Tag` is one of the following:
 
 `Chore` — for refactoring, adding tests and so on (anything that isn’t user-facing).
 
+Break: Trying with breaking
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
