@@ -6,6 +6,8 @@ With no useful commit
 
 Again contributor is not providing any good commit message
 
+i am contributor 2
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
