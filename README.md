@@ -37,6 +37,8 @@ Breaking: XYZ
 
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 
+Fix: Semi rule incorrectly flagging extra semicolon (fixes #840)
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
