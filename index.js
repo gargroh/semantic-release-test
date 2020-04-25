@@ -17,3 +17,4 @@ console.log("breaking");
 
 feat: A new feature
 
+fix: A bug fix
