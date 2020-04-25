@@ -61,3 +61,7 @@ BREAKING CHANGE: isolate scope bindings definition has changed and
     }
     
     The removed `inject` wasn't generaly useful for directives so there should be no code using it.
+
+
+    BREAKING CHANGE: The graphiteWidth option has been removed.
+The default graphite width of 10mm is always used for performance reasons.
