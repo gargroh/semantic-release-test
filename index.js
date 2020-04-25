@@ -65,3 +65,5 @@ BREAKING CHANGE: isolate scope bindings definition has changed and
 
     BREAKING CHANGE: The graphiteWidth option has been removed.
 The default graphite width of 10mm is always used for performance reasons.
+
+@semantic-release/release-notes-generator
