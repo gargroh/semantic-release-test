@@ -15,4 +15,5 @@ console.log("feature");
 console.log("breaking");
 
 
-feat(lang): add polish language
+feat: A new feature
+
