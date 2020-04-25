@@ -1,66 +1,111 @@
-# semantic-release-test
+# Contributing
 
-Docs chnage only
+## Questions
 
-With no useful commit
+If you have questions about implementation details, help or support, then please use our dedicated community forum at [Github Discussions](https://github.com/tannerlinsley/react-query/discussions) **PLEASE NOTE:** If you choose to instead open an issue for your question, your issue will be immediately closed and redirected to the forum.
 
-Again contributor is not providing any good commit message
+## Reporting Issues
 
-i am contributor 2
+If you have found what you think is a bug, please [file an issue](https://github.com/tannerlinsley/react-query/issues/new). **PLEASE NOTE:** Issues that are identified as implementation questions or non-issues will be immediately closed and redirected to [Github Discussions](https://github.com/tannerlinsley/react-query/discussions)
 
-i am contributor 3
+## Suggesting new features
 
-trigger again 1
+If you are here to suggest a feature, first create an issue if it does not already exist. From there, we will discuss use-cases for the feature and then finally discuss how it could be implemented.
 
-trigger again 2
+## Development
 
-The `Tag` is one of the following:
+If you have been assigned to fix an issue or develop a new feature, please follow these steps to get started:
 
-- `Fix` — for a bug fix.
-- `Update` — for a backwards-compatible enhancement.
-- `New` — implemented a new feature.
-- `Breaking` — for a backwards—incompatible enhancement or feature.
-- `Docs` — changes to documentation only.
-- `Build` — changes to build process only.
-- `Upgrade` — for a dependency upgrade.
-- `Chore` — for refactoring, adding tests and so on (anything that isn’t user-facing).
+- Fork this repository
+- Install dependencies by running `$ yarn`
+- Link `react-query` locally by running `$ yarn link`
+- Auto-build files as you edit by running `$ yarn start`
+- Implement your changes and tests to files in the `src/` directory and corresponding test files
+- To run examples, follow their individual directions. Usually this is just `$ yarn && yarn start`.
+- To run examples using your local build, link to the local `react-query` by running `$ yarn link react-query` from the example's directory
+- Document your changes in the appropriate doc page
+- Git stage your required chnages and commit (see below commit guidelines)
+- Submit PR for review
 
-- `Upgrade` — for a dependency upgrade.
+## Commit message conventions
 
-- `Upgrade` — for a dependency upgrade.
+`react-query` is using [Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines).
 
-`Chore` — for refactoring, adding tests and so on (anything that isn’t user-facing).
+We have very precise rules over how our git commit messages can be formatted. This leads to **more readable messages** that are easy to follow when looking through the **project history**.
 
-Break: Trying with breaking
+### Commit Message Format
 
-Breaking: XYZ
+Each commit message consists of a **header**, a **body** and a **footer**. The header has a special
+format that includes a **type**, a **scope** and a **subject**:
 
-BREAKING CHANGE: `extends` key in config file is now used for extending other config files
+```
+<type>(<scope>): <subject>
+<BLANK LINE>
+<body>
+<BLANK LINE>
+<footer>
+```
 
-Fix: Semi rule incorrectly flagging extra semicolon (fixes #840)
+The **header** is mandatory and the **scope** of the header is optional.
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+Any line of the commit message cannot be longer than 100 characters! This allows the message to be easier
+to read on GitHub as well as in various git tools.
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+### Revert
 
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+If the commit reverts a previous commit, it should begin with `revert:`, followed by the header
+of the reverted commit.
+In the body it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit
+being reverted.
 
-## Contributors ✨
+### Type
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Must be one of the following:
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/gargroh"><img src="https://avatars3.githubusercontent.com/u/42495927?v=4" width="100px;" alt=""/><br /><sub><b>Rohit Garg</b></sub></a><br /><a href="#infra-gargroh" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/gargroh/semantic-release-test/commits?author=gargroh" title="Tests">⚠️</a> <a href="https://github.com/gargroh/semantic-release-test/commits?author=gargroh" title="Code">💻</a> <a href="https://github.com/gargroh/semantic-release-test/commits?author=gargroh" title="Documentation">📖</a> <a href="#ideas-gargroh" title="Ideas, Planning, & Feedback">🤔</a></td>
-  </tr>
-</table>
+- **feat**: A new feature
+- **fix**: A bug fix
+- **docs**: Documentation only changes
+- **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing
+  semi-colons, etc)
+- **refactor**: A code change that neither fixes a bug nor adds a feature
+- **perf**: A code change that improves performance
+- **test**: Adding missing or correcting existing tests
+- **chore**: Changes to the build process or auxiliary tools and libraries such as documentation
+  generation
 
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
+### Scope
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+The scope could be anything specifying place of the commit change. For example `useQuery`, `useMutation` etc...
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+You can use `*` when the change affects more than a single scope.
+
+### Subject
+
+The subject contains succinct description of the change:
+
+- use the imperative, present tense: "change" not "changed" nor "changes"
+- don't capitalize first letter
+- no dot (.) at the end
+
+### Body
+
+Just as in the **subject**, use the imperative, present tense: "change" not "changed" nor "changes".
+The body should include the motivation for the change and contrast this with previous behavior.
+
+### Footer
+
+The footer should contain any information about **Breaking Changes** and is also the place to [reference GitHub issues that this commit closes][closing-issues].
+
+**Breaking Changes** should start with the word `BREAKING CHANGE:` with a space or two newlines. The rest of the commit message is then used for this.
+
+A detailed explanation can be found in this [document][commit-message-format].
+
+## Pull requests
+
+Maintainers merge pull requests by squashing all commits and editing the commit message if necessary using the GitHub user interface.
+
+Use an appropriate commit type. Be especially careful with breaking changes.
+
+## Releases
+
+For each new commit added to `master` with `git push` or by merging a pull request or merging from another branch, a github action is triggered and runs the `semantic-release` command to make a release if there are codebase changes since the last release that affect the package functionalities.
