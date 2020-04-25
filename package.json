@@ -16,6 +16,5 @@
     "url": "https://github.com/gargroh/semantic-release-test/issues"
   },
   "homepage": "https://github.com/gargroh/semantic-release-test#readme",
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
