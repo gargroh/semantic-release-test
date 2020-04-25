@@ -13,6 +13,3 @@ console.log("trying with extension");
 console.log("feature");
 
 console.log("breaking");
-
-
-feat(lang): add polish language
